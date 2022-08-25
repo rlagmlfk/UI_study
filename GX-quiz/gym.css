@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background-color: lightcyan;
+    text-align: center;
+}
+
+.list {
+    width: 400px;
+    margin: auto;
+    background-color: lightgreen;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.header {
+    height: 48px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: beige;
+    color: coral;
+    border-radius: 20px 20px 0 0;
+}
+
+.items {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.footer {
+    background-color: beige;
+    border-radius: 0 0 20px 20px;
+}

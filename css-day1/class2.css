@@ -1,0 +1,22 @@
+@charset 'UTF-8';
+
+.black {
+    width: 300px;
+    height: 600px;
+    border: 10px solid black;
+    margin: 100px auto;
+}
+
+.black .green {
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
+    background-color: greenyellow;
+}
+
+.black .red {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    background-color: coral;
+}

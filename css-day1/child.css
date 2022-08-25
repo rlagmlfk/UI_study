@@ -1,0 +1,12 @@
+@charset 'UTF-8'; /* 인코딩 타입 설정 */
+div {
+    border: 1px solid green;
+}
+/* 문제: 링크에만 테두리 파랑색으로 */
+div a{
+    border: 3px solid yellow;
+}
+/* div 직계자손만 처리할 때 */
+div > a {
+    border: 3px solid blue;
+}

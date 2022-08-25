@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            width: 400px;
+            padding: 1em;
+        }
+        form div + div {
+        margin-top: 8px;
+        }
+        label {
+            text-align: left;
+            position: relative;
+            margin-right: 20px;
+        }
+        textarea {
+        vertical-align: top;
+        }
+        .btn {
+        margin-left: 100px;
+        }
+    </style>
+</head>
+<body>
+    <form action="insert.no" method="post">
+    <div class>
+    <label for="title"><b>제목</b></label> 
+    <input type="text" placeholder="제목을 입력하시오." required="required">
+    </div>
+    <div class>
+    <label for="cont"><b>내용</b></label> 
+    <textarea name="content" placeholder="내용을 입력하시오." cols="30" rows="10" required="required"></textarea>
+    </div>
+    <div class>
+    <label for="file"><b>첨부파일</b></label>
+    <input type="file" name="uploadFile" value="">
+    </div>
+    <div class="btn">
+        <button>작성하기</button>
+    </div>
+    </form>
+</body>
+</html>

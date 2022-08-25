@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+}
+
+.ul.gnb > li {
+    list-style-type: none;
+    float: left;
+}
+
+.gnb > li:nth-of-type(1){
+    border: 1px solid blue;
+}

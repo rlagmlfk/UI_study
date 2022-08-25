@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    float: right;
+    margin: 10px;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: relative;
+    float: right;
+    margin: 10px;
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    position: relative;
+    float: right;
+    margin: 10px;
+}

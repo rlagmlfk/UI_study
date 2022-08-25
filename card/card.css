@@ -1,0 +1,85 @@
+*{
+    border: 1px solid lightcoral;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: lightyellow;
+}
+
+.card {
+    padding:20px; /* 위아래 20px 양옆 20px */
+    color: black;
+    width: 280px;
+    border-radius: 8px;
+    margin: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card > img { /* 직계자손 */
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h1 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: black;
+}
+
+.card-info img {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.user-wrap{
+    display: flex;
+    align-items: center;
+    
+}
+
+.icons {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.chat, .favorite {
+    display: inline-block;
+}
+
+.chat {
+    margin-right: 10px;
+}
+
+.chat span,
+.favorite span {
+    line-height: 16px;
+}

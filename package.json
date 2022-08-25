@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "colors": "^1.4.0",
+    "firebase": "^9.9.0",
+    "nodemon": "^2.0.19",
+    "to": "^0.2.9",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  },
+  "name": "ui_study",
+  "description": "HTML 5, CSS, Javascript, NodeJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "server": "nodemon render.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merenjuillet/UI_study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merenjuillet/UI_study/issues"
+  },
+  "homepage": "https://github.com/merenjuillet/UI_study#readme"
+}

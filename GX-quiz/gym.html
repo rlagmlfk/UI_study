@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/dfcabc555f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./gx.js">
+    <link rel="stylesheet" href="./gym.css">
+    <title>터 짐</title>
+</head>
+<body>
+    <section class="list">
+        <header class="header">GroupExercise Preference</header>
+        <ul class="items">
+            <li class="item_row">
+                <div class="item">
+                    <span class="item_name">스피닝</span>
+                    <button class="item_delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+                <div class="item_divider"></div>
+            </li>
+        </ul>
+        <footer class="footer">
+            <input type="text"> 
+            <button class="btn_add"><i class="fas fa-plus"></i></button>
+        </footer>
+    </section>
+    <script>
+        const btn_add = document.querySelector('.btn_add');
+        const item_delete = document.querySelector('.item_delete');
+        const input = document.querySelector('input');
+        const ul = document.querySelector('ul');
+        const li = document.createElement('li');
+        btn_add.addEventListener('click',()=>{
+            // alert('입력');
+            if(input.value.length > 0){
+                li.appendChild(document.createTextNode(input.value));
+                //item_delete.appendChild(document.createElement(input.value));
+                //item_delete.appendChild(document.createTextNode('삭제'));
+                //li.appendChild(item_delete);
+                ul.appendChild(li);
+                input.value = "";    
+            }
+        });
+/*         item_delete.addEventListener('click',(event)=>{
+            //console.log(event.target);
+            if(event.target == event.currentTarget){
+                li.remove();
+            }
+        }) */
+    </script>
+</body>
+</html>

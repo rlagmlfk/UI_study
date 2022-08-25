@@ -1,0 +1,18 @@
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    margin-bottom: 8px;
+    background-color: bisque;
+}
+.left {
+    width: 740px;
+    height: 428px;
+    background-color: burlywood;
+    float: left;
+}
+.right {
+    width: 332px;
+    height: 428px;
+    background-color: rgb(239, 138, 5);
+    float: right;
+}

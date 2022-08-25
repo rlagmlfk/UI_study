@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+.wrap {
+    width: 800px;
+    border: 10px solid black;
+    margin: 100px auto;
+}
+/* 가상 선택자는 인라인요소이므로 블록요소로 변경해줌 */
+.wrap::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/* 
+    전체 레이아웃에는 영향을 미치지 않으면서
+    자기 자신만 이동하거나 변화를 주고 싶을 때 사용
+*/
+.left {
+    width: 400px;
+    height: 400px;
+    background-color: gold;
+    float: left;
+}
+
+.right {
+    width: 400px;
+    height: 400px;
+    background-color: greenyellow;
+    float: right;
+    position: relative;
+}
+
+.right p {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.bottom {
+    width: 800px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+
+/* 
+    위 상태로 실행하면 bottom이 보이지 않는다. 요소 중에 하나라도 float요소가 존재하면
+    float 요소가 필요없어도 주어야 화면에 보임
+    따라서 주석된 부분을 풀어주어야 bottom이 보인다.
+    그런데 wrap이 800이므로 옆으로는 붙지 못하고 left를 주었음에도 아래로 붙는다.
+*/

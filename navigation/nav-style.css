@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Orbitron&display=swap");
+*{
+    box-sizing: border-box;
+    /* border: 1px solid yellowgreen; */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+header { /* 1. */
+    width: 100%;
+    border-bottom: 1px solid gold; /* 2. 메뉴아래 구분선 */
+    display: flex; /* 3. */
+    justify-content: space-between; /* 4. 양 끝에 배치하면서 균등배치 */
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+}
+
+header h1 {
+    font: bold 24px/1 "Architects Daughter";
+    color: gold;
+}
+
+header .gnb{
+    display: flex; /* 5. 안쪽에 있는 li들이 좌우배치됨 */
+}
+
+
+header .gnb li {
+    margin: 0px 20px; /* 6. 위아래 0px 양 옆 20px */
+}
+
+header .gnb li a {
+    font: bold 16px/1 "Architects Daughter";
+    color: bisque;
+    letter-spacing: 3px;
+}
+
+header .gnb li.on a{
+    background-color: greenyellow;
+    color: white;
+}
+
+header .lnb {
+    display: flex;
+}
+
+header .lnb li {
+    margin: 0px 10px;
+}
+
+header .lnb li a {
+    font-size: 16px;
+    color: gold;
+}
+
+header .btnMenu {
+    font-size: 24px;
+    color: gold;
+    display: none;
+}
+
+.camp-bg {
+    width: 100%;
+    height: 100vh;
+}
+
+.video-wrap {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.video-wrap video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* 반응형 웹 처리 */
+@media screen and (max-width: 1024px) {
+    header .gnb {
+        display: none;
+    }
+    header .lnb {
+        display: none;
+    }
+    header .btnMenu {
+        display: block;
+    }
+}
